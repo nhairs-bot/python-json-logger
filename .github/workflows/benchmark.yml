@@ -2,6 +2,8 @@ name: Benchmark JSON formatters
 
 on:
   workflow_dispatch:
+  push:
+    branches: [brave-pelican/benchmark-baseline]
 
 permissions:
   contents: read
