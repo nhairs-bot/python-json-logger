@@ -30,7 +30,7 @@ def main() -> None:
             axis.set_xlim(left=0)
             axis.set_xlabel("Median time (µs) — lower is faster")
             axis.set_ylim(len(WORKLOADS) - 0.5, -0.5)
-            axis.grid(axis="y", color="#666666", alpha=0.4, linewidth=0.8)
+            axis.grid(axis="y", visible=False)
             for row in range(len(WORKLOADS)):
                 if row % 2 == 0:
                     axis.axhspan(row - 0.5, row + 0.5, color="#000000", alpha=0.045, zorder=0)
